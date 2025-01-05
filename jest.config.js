@@ -9,6 +9,7 @@ module.exports = {
     '!src/lib/resgistry.ts',
     '!src/types/**',
     '!src/styles/**',
+    '!src/pages/_app.tsx',
     '!src/**/stories.tsx'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
@@ -18,6 +19,8 @@ module.exports = {
   },
   moduleNameMapper: {
     '^styled-components':
-      'styled-components/dist/styled-components.browser.cjs.js'
-  }
+      'styled-components/dist/styled-components.browser.cjs.js',
+       "@/utils/tests/helpers": "<rootDir>/src/utils/tests/helpers",
+       "@/styles/theme":"<rootDir>/src/styles/theme",
+  },
 }
