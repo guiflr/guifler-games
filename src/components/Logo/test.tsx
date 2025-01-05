@@ -3,6 +3,12 @@ import Logo from '.'
 import { renderWithTheme } from '@/utils/tests/helpers'
 
 describe('<Logo />', () => {
+  const spy = jest.spyOn(console, 'warn').mockImplementation(() => {})
+
+  afterEach(() => {
+    spy.mockClear()
+  })
+
   it('should render with white label by default', () => {
     renderWithTheme(<Logo />)
 
