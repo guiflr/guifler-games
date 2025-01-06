@@ -17,7 +17,8 @@ const eslintConfig = [
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/explit-module-boundary-types': 'off',
-      "@typescript-eslint/no-non-null-assertion": "off"
+      "@typescript-eslint/no-non-null-assertion": "off",
+      'no-unused-vars': 'off',
     },
   })
 ]

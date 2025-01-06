@@ -16,11 +16,13 @@
     "generate": "npx plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.47.0",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.13",
+    "styled-icons": "^10.47.1",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
