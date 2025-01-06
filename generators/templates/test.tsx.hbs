@@ -3,6 +3,12 @@ import { render, screen } from '@testing-library/react'
 import {{pascalCase name}} from '.'
 
 describe('<{{pascalCase name}} />', () => {
+  const spy = jest.spyOn(console, 'warn').mockImplementation(() => {})
+
+  afterEach(() => {
+    spy.mockClear()
+  })
+
   it('should render the heading', () => {
     const { container } = render(<{{pascalCase name}} />)
 
