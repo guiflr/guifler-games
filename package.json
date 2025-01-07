@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prepare": "husky",
     "test": "jest --passWithNoTests --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:watch": "jest --watch --maxWorkers=50%",
     "test:ci": "jest --runInBand",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
