@@ -38,6 +38,11 @@ const wrapperModifiers = {
 }
 export const Wrapper = styled.button<WrapperProps>`
   ${({ theme, size, $fullWidth, $withIcon }) => css`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: ${theme.font.family};
     cursor: pointer;
     background: linear-gradient(180deg, #ff5f5f 0%, #f062c0 50%);
     color: ${theme.colors.white};
