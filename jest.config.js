@@ -22,5 +22,7 @@ module.exports = {
       'styled-components/dist/styled-components.browser.cjs.js',
        "@/utils/tests/helpers": "<rootDir>/src/utils/tests/helpers",
        "@/styles/theme":"<rootDir>/src/styles/theme",
+       "@/components/Heading": "<rootDir>/src/components/Heading",
+       "@/components/Logo": "<rootDir>/src/components/Logo",
   },
 }
