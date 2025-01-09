@@ -24,5 +24,6 @@ module.exports = {
        "@/styles/theme":"<rootDir>/src/styles/theme",
        "@/components/Heading": "<rootDir>/src/components/Heading",
        "@/components/Logo": "<rootDir>/src/components/Logo",
+       "@/components/Button": "<rootDir>/src/components/Button",
   },
 }
