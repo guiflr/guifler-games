@@ -21,3 +21,14 @@ export const Default: any = (args: BannerProps) => (
     <Banner {...args} />
   </div>
 )
+
+export const WithRibbon: StoryObj<BannerProps> = (args: BannerProps) => (
+  <div style={{ maxWidth: '104rem' }}>
+    <Banner {...args} />
+  </div>
+)
+WithRibbon.args = {
+  $ribbon: '20% OFF',
+  $ribbonSize: 'normal',
+  $ribbonColor: 'primary'
+}
