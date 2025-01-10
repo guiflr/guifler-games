@@ -10,6 +10,7 @@ export type HighlightProps = {
   floatImage?: string
   alignment?: 'right' | 'left'
 }
+
 const Highlight = ({
   title,
   subtitle,
