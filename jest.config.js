@@ -13,7 +13,7 @@ module.exports = {
     '!src/**/stories.tsx'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  modulePaths: ['<rootDir>/src'],
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
   },
@@ -24,6 +24,8 @@ module.exports = {
        "@/styles/theme":"<rootDir>/src/styles/theme",
        "@/components/Heading": "<rootDir>/src/components/Heading",
        "@/components/Logo": "<rootDir>/src/components/Logo",
-       "@/components/Button": "<rootDir>/src/components/Button",
+       "@/components/Button": "<rootDir>/src/components/Button",       
+       "@/components/Slider": "<rootDir>/src/components/Slider",
+       "@/components/Banner": "<rootDir>/src/components/Banner",
   },
 }
