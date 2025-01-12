@@ -3,9 +3,9 @@ import {
   Favorite,
   FavoriteBorder
 } from '@styled-icons/material-outlined'
+
 import Button from '@/components/Button'
 import * as S from './styles'
-import Image from 'next/image'
 import Ribbon from '../Ribbon'
 
 export type GameCardProps = {

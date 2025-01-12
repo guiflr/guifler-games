@@ -27,5 +27,6 @@ module.exports = {
        "@/components/Button": "<rootDir>/src/components/Button",       
        "@/components/Slider": "<rootDir>/src/components/Slider",
        "@/components/Banner": "<rootDir>/src/components/Banner",
-  },
+      "@/components/GameCard": "<rootDir>/src/components/GameCard",
+      },
 }
