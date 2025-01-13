@@ -47,21 +47,20 @@ const GlobalStyles: React.NamedExoticComponent<
     }
   }  
 
-  ${({ theme, removeBg }) => `
-    body {
-      font-family: ${theme.font.family}
-    }
-
+  ${({ theme, removeBg }) => css`
     html {
-      font-size: ${theme.font.sizes.medium}
+      font-size: 62.5%;
     }
 
-     ${
-       !removeBg &&
-       css`
-         background-color: ${theme.colors.mainBg};
-       `
-     }
+    body {
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+
+      ${!removeBg &&
+      css`
+        background-color: ${theme.colors.mainBg};
+      `}
+    }
   `}
 
 `
