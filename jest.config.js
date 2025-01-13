@@ -28,5 +28,8 @@ module.exports = {
        "@/components/Slider": "<rootDir>/src/components/Slider",
        "@/components/Banner": "<rootDir>/src/components/Banner",
       "@/components/GameCard": "<rootDir>/src/components/GameCard",
+      "@/components/Container": "<rootDir>/src/components/Container",
+      "@/components/Footer": "<rootDir>/src/components/Footer",
+      "@/components/Menu": "<rootDir>/src/components/Menu",
       },
 }
