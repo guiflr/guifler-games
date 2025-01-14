@@ -9,6 +9,7 @@ module.exports = {
     '!src/lib/resgistry.ts',
     '!src/types/**',
     '!src/styles/**',
+    '!src/components/**/mock.ts',
     '!src/pages/_app.tsx',
     '!src/**/stories.tsx'
   ],
@@ -31,5 +32,7 @@ module.exports = {
       "@/components/Container": "<rootDir>/src/components/Container",
       "@/components/Footer": "<rootDir>/src/components/Footer",
       "@/components/Menu": "<rootDir>/src/components/Menu",
+      "@/components/GamerCardSlider": "<rootDir>/src/components/GamerCardSlider",
+      "@/components/Highlights": "<rootDir>/src/components/Highlights",
       },
 }

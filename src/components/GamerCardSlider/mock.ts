@@ -1,6 +1,6 @@
 import { GameCardProps } from '../GameCard'
 
-export const gamesMock: GameCardProps[] = [
+export default [
   {
     title: 'Population Zero',
     developer: 'Rockstar Games',
