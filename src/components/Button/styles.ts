@@ -1,9 +1,12 @@
 import styled, { css, DefaultTheme } from 'styled-components'
+import shouldForwardProp from '@styled-system/should-forward-prop'
+
 import { ButtonProps } from '.'
+import { darken } from 'polished'
 
 type WrapperProps = { $withIcon: boolean } & Pick<
   ButtonProps,
-  'size' | '$fullWidth'
+  'size' | '$fullWidth' | 'minimal'
 >
 
 const wrapperModifiers = {
@@ -34,10 +37,20 @@ const wrapperModifiers = {
         margin-left: ${theme.spacings.xxsmall};
       }
     }
+  `,
+  minimal: (theme: DefaultTheme) => css`
+    background: none;
+    color: ${theme.colors.primary};
+
+    &:hover {
+      color: ${darken(0.1, theme.colors.primary)};
+    }
   `
 }
-export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, size, $fullWidth, $withIcon }) => css`
+export const Wrapper = styled.button.withConfig({
+  shouldForwardProp: (prop) => shouldForwardProp(prop) && prop !== ''
+})<WrapperProps>`
+  ${({ theme, size, $fullWidth, $withIcon, minimal }) => css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -51,11 +64,14 @@ export const Wrapper = styled.button<WrapperProps>`
     padding: ${theme.spacings.xxsmall};
 
     &:hover {
-      background: linear-gradient(180deg, #e35565 0%, #d958a6 50%);
+      background: ${minimal
+        ? 'none'
+        : `linear-gradient(180deg, #e35565 0%, #d958a6 50%)`};
     }
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!$fullWidth && wrapperModifiers.fullWidth()};
     ${$withIcon && wrapperModifiers.withIcon(theme)};
+    ${!!minimal && wrapperModifiers.minimal(theme)};
   `}
 `

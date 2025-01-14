@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@styled-icons/material-outlined": "^10.47.0",
+    "@styled-system/should-forward-prop": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "next": "15.1.2",
     "polished": "^4.3.1",
@@ -47,6 +48,7 @@
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@types/react-slick": "^0.23.13",
+    "@types/styled-system__should-forward-prop": "^5.1.4",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^9.17.0",
     "eslint-config-next": "15.1.2",
