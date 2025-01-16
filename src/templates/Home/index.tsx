@@ -1,3 +1,5 @@
+'use client'
+
 import { BannerProps } from '@/components/Banner'
 import BannerSlider from '@/components/BannerSlider'
 import { Container } from '@/components/Container'

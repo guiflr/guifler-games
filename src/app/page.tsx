@@ -1,7 +1,7 @@
 import Home, { HomeTemplateProps } from '@/templates/Home'
-import { bannersMock } from '@/components/BannerSlider/mock'
-import { gamesMock } from '@/components/GamerCardSlider/mock'
-import { highlightMock } from '@/components/Highlights/mock'
+import bannersMock from '@/components/BannerSlider/mock'
+import gamesMock from '@/components/GamerCardSlider/mock'
+import highlightMock from '@/components/Highlights/mock'
 import { unstable_cache } from 'next/cache'
 
 async function getHomeData(): Promise<HomeTemplateProps> {
