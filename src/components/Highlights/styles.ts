@@ -25,7 +25,9 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.section<WrapperProps>`
+export const Wrapper = styled.section.withConfig({
+  shouldForwardProp: (prop) => prop !== 'alignment'
+})<WrapperProps>`
   ${({ $backgroundImage, alignment }) => css`
     position: relative;
     background-image: url(${$backgroundImage});
