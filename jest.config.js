@@ -34,6 +34,7 @@ module.exports = {
       "@/components/Menu": "<rootDir>/src/components/Menu",
       "@/components/GamerCardSlider": "<rootDir>/src/components/GamerCardSlider",
       "@/components/Highlights": "<rootDir>/src/components/Highlights",
-      "@/components/TextField": "<rootDir>/src/components/TextField"
+      "@/components/TextField": "<rootDir>/src/components/TextField",
+      "@/components/Showcase": "<rootDir>/src/components/Showcase"
       },
 }
