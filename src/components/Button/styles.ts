@@ -4,7 +4,7 @@ import shouldForwardProp from '@styled-system/should-forward-prop'
 import { ButtonProps } from '.'
 import { darken } from 'polished'
 
-type WrapperProps = { $withIcon: boolean } & Pick<
+export type WrapperProps = { $withIcon: boolean } & Pick<
   ButtonProps,
   'size' | '$fullWidth' | 'minimal'
 >
