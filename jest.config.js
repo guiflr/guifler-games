@@ -35,6 +35,7 @@ module.exports = {
       "@/components/GamerCardSlider": "<rootDir>/src/components/GamerCardSlider",
       "@/components/Highlights": "<rootDir>/src/components/Highlights",
       "@/components/TextField": "<rootDir>/src/components/TextField",
-      "@/components/Showcase": "<rootDir>/src/components/Showcase"
+      "@/components/Showcase": "<rootDir>/src/components/Showcase",
+      "@/components/Ribbon/styles": "<rootDir>/src/components/Ribbon/styles"
       },
 }
