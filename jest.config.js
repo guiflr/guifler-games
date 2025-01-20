@@ -36,6 +36,7 @@ module.exports = {
       "@/components/Highlights": "<rootDir>/src/components/Highlights",
       "@/components/TextField": "<rootDir>/src/components/TextField",
       "@/components/Showcase": "<rootDir>/src/components/Showcase",
-      "@/components/Ribbon/styles": "<rootDir>/src/components/Ribbon/styles"
+      "@/components/Ribbon/styles": "<rootDir>/src/components/Ribbon/styles",
+      "@/components/MediaMatch": "<rootDir>/src/components/Ribbon/styles"
       },
 }
