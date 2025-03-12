@@ -12,6 +12,7 @@ describe('<GameDetails />', () => {
 
   it('should render the blocks', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',
@@ -41,8 +42,37 @@ describe('<GameDetails />', () => {
     expect(screen.getByRole('heading', { name: /genres/i })).toBeInTheDocument()
   })
 
+  it('should render the developer', () => {
+    const props: GameDetailsProps = {
+      publisher: 'Walktrough',
+      developer: 'Different Tales',
+      platforms: ['windows', 'mac', 'linux'],
+      releaseDate: '2020-11-21T23:00:00',
+      rating: 'BR0',
+      genres: ['Role-playing', 'Narrative']
+    }
+    renderWithTheme(<GameDetails {...props} />)
+
+    expect(screen.getByText(/Different Tales/i)).toBeInTheDocument()
+  })
+
+  it('should render the publisher', () => {
+    const props: GameDetailsProps = {
+      publisher: 'Walktrough',
+      developer: 'Different Tales',
+      platforms: ['windows', 'mac', 'linux'],
+      releaseDate: '2020-11-21T23:00:00',
+      rating: 'BR0',
+      genres: ['Role-playing', 'Narrative']
+    }
+    renderWithTheme(<GameDetails {...props} />)
+
+    expect(screen.getByText(/walktrough/i)).toBeInTheDocument()
+  })
+
   it('should render platform icons', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',
@@ -58,6 +88,7 @@ describe('<GameDetails />', () => {
 
   it('should render free rating when BR0', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',
@@ -71,6 +102,7 @@ describe('<GameDetails />', () => {
 
   it('should render 18+ rating when BR18', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',
@@ -84,6 +116,7 @@ describe('<GameDetails />', () => {
 
   it('should render the formated date', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',
@@ -97,6 +130,7 @@ describe('<GameDetails />', () => {
 
   it('should render a list of genres', () => {
     const props: GameDetailsProps = {
+      publisher: 'Walktrough',
       developer: 'Different Tales',
       platforms: ['windows', 'mac', 'linux'],
       releaseDate: '2020-11-21T23:00:00',

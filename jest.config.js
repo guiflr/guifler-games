@@ -39,5 +39,9 @@ module.exports = {
       "@/components/Ribbon/styles": "<rootDir>/src/components/Ribbon/styles",
       "@/components/MediaMatch": "<rootDir>/src/components/Ribbon/styles",
       "@/templates/Base": "<rootDir>/src/templates/Base",
+      "@/components/TextContent": "<rootDir>/src/components/TextContent",
+      "@/components/GameInfo": "<rootDir>/src/components/GameInfo",
+      "@/components/Gallery": "<rootDir>/src/components/Gallery",
+      "@/components/GameDetails": "<rootDir>/src/components/GameDetails",
       },
 }
